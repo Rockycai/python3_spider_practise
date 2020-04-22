@@ -24,3 +24,5 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 - 解析json: [tutorial_requests_return_json.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_return_json.py)
 
 - 爬豆瓣top250第一页电影名称: [tutorial_requests_get_page.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_get_page.py)
+
+- 下载github ico图片: [tutorial_requests_get_bin.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_get_bin.py)

@@ -19,8 +19,12 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 
 进行get请求
 
-![Alt get请求](https://github.com/Rockycai/python3_spider_practise/raw/master/images/1.png "Optional title")
+![Alt get请求](https://github.com/Rockycai/python3_spider_practise/raw/master/images/1.png)
 
 加参数的get请求
 
-![Alt 参数get请求](https://github.com/Rockycai/python3_spider_practise/raw/master/images/3.png "Optional title")
+![Alt 参数get请求](https://github.com/Rockycai/python3_spider_practise/raw/master/images/3.png)
+
+使用params参数简化get请求
+
+![Alt 参数get请求](https://github.com/Rockycai/python3_spider_practise/raw/master/images/4.png)

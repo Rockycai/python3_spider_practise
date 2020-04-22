@@ -1,7 +1,9 @@
 # python3_spider_practise
 python3 爬虫课代码
 
-1. requests基本使用
+开发环境：python3.6.3, mac os X 10.13.6, vscode
+
+## requests基本使用
 
 安装**requests**
 

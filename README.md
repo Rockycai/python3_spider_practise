@@ -18,7 +18,7 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
 进行get请求
-![get请求](https://github.com/Rockycai/python3_spider_practise/images/1.png "Optional title")
+![Alt get请求](https://github.com/Rockycai/python3_spider_practise/raw/master/images/1.png "Optional title")
 
 加参数的get请求
-![参数get请求](https://github.com/Rockycai/python3_spider_practise/images/3.png "Optional title")
+![Alt 参数get请求](https://github.com/Rockycai/python3_spider_practise/raw/master/images/3.png "Optional title")

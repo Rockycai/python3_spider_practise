@@ -1,2 +1,16 @@
 # python3_spider_practise
 python3 爬虫课代码
+
+1. requests基本使用
+
+安装**requests**
+
+```bash
+pip install requests
+```
+
+如果速度比较慢可以使用-i参数
+
+```bash
+pip install requests -i https://mirrors.aliyun.com/pypi/simple/
+```

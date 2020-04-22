@@ -21,4 +21,6 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 
 - get带参数请求: [tutorial_requests_get.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_get.py)
 
-- 解析json：[tutorial_requests_return_json.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_return_json.py)
+- 解析json: [tutorial_requests_return_json.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_return_json.py)
+
+- 爬豆瓣top250第一页电影名称: [tutorial_requests_get_page.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_get_page.py)

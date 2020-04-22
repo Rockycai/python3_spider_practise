@@ -17,4 +17,4 @@ pip install requests
 pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
-直接[get](https://https://github.com/Rockycai/python3_spider_practise/raw/master/tutorial_requests_get.py)
+直接[get](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_get.py)请求

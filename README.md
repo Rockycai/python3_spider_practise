@@ -19,6 +19,8 @@ pip install requests
 pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
+requests用法
+
 - get请求: [tutorial_requests_get.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_get.py)
 
 - get带参数请求: [tutorial_requests_get.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_get.py)
@@ -40,3 +42,5 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 - 获取cookies: [tutorial_requests_cookies.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_cookies.py)
 
 - 设置已经登陆cookies: [tutorial_requests_cookies_login.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_cookies_login.py)
+
+- seesion维持: [tutorial_requests_session.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_session.py)

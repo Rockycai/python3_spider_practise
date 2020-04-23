@@ -1,6 +1,8 @@
 # python3_spider_practise
 python3 爬虫课代码
 
+这是学习爬虫课程的总结，代码比较简单，个人是希望通过一些简单的使用，去举一反三，不仅有课程代码，个人也去做了一些小实验，比如爬取拉钩的top250名电影等。在提升个人技术的前提也去尝试一些有意思的事情
+
 开发环境：python3.6.3, mac os X 10.13.6, vscode
 
 ## requests基本使用
@@ -32,3 +34,5 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 - response信息: [tutorial_requests_response.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_response.py)
 
 - 判断状态是否为200: [tutorial_requests_codes.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_codes.py)
+
+- 上传文件: [tutorial_requests_upload_file.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_upload_file.py)

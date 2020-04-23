@@ -21,34 +21,34 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 
 ### requests用法
 
-- get请求: [tutorial_requests_get.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_get.py)
+- get请求: [tutorial_requests_get.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_get.py)
 
-- get带参数请求: [tutorial_requests_get.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_get.py)
+- get带参数请求: [tutorial_requests_get.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_get.py)
 
-- 解析json: [tutorial_requests_return_json.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_return_json.py)
+- 解析json: [tutorial_requests_return_json.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_return_json.py)
 
-- 爬豆瓣top250第一页电影名称: [tutorial_requests_get_page.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_get_page.py)
+- 爬豆瓣top250第一页电影名称: [tutorial_requests_get_page.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_get_page.py)
 
-- 下载github ico图片: [tutorial_requests_get_bin.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_get_bin.py)
+- 下载github ico图片: [tutorial_requests_get_bin.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_get_bin.py)
 
-- post请求: [tutorial_requests_post.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_post.py)
+- post请求: [tutorial_requests_post.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_post.py)
 
-- response信息: [tutorial_requests_response.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_response.py)
+- response信息: [tutorial_requests_response.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_response.py)
 
-- 判断状态是否为200: [tutorial_requests_codes.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_codes.py)
+- 判断状态是否为200: [tutorial_requests_codes.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_codes.py)
 
-- 上传文件: [tutorial_requests_upload_file.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_upload_file.py)
+- 上传文件: [tutorial_requests_upload_file.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_upload_file.py)
 
-- 获取cookies: [tutorial_requests_cookies.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_cookies.py)
+- 获取cookies: [tutorial_requests_cookies.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_cookies.py)
 
-- 设置已经登陆cookies: [tutorial_requests_cookies_login.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_cookies_login.py)
+- 设置已经登陆cookies: [tutorial_requests_cookies_login.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_cookies_login.py)
 
-- seesion维持: [tutorial_requests_session.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_session.py)
+- seesion维持: [tutorial_requests_session.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_session.py)
 
-- 忽略不受信任的ssl: [tutorial_requests_ssl.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_ssl.py)
+- 忽略不受信任的ssl: [tutorial_requests_ssl.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_ssl.py)
 
-- 设置超时: [tutorial_requests_timeout.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_timeout.py)
+- 设置超时: [tutorial_requests_timeout.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_timeout.py)
 
-- 身份认证: [tutorial_requests_auth.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_auth.py)
+- 身份认证: [tutorial_requests_auth.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_auth.py)
 
-- 代理: [tutorial_requests_auth.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_auth.py)
+- 代理: [tutorial_requests_auth.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_auth.py)

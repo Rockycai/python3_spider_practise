@@ -50,3 +50,5 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 - 设置超时: [tutorial_requests_timeout.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_timeout.py)
 
 - 身份认证: [tutorial_requests_auth.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_auth.py)
+
+- 代理: [tutorial_requests_auth.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_auth.py)

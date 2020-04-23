@@ -36,3 +36,5 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 - 判断状态是否为200: [tutorial_requests_codes.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_codes.py)
 
 - 上传文件: [tutorial_requests_upload_file.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_upload_file.py)
+
+- 获取cookies: [tutorial_requests_cookies.py])(https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_cookies.py)

@@ -52,3 +52,19 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 - 身份认证: [tutorial_requests_auth.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_auth.py)
 
 - 代理: [tutorial_requests_auth.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_auth.py)
+
+## pyquery
+
+安装**pyquery**
+
+```bash
+pip install pyquery
+```
+
+如果速度比较慢可以使用-i参数
+
+```bash
+pip install pyquery -i https://mirrors.aliyun.com/pypi/simple/
+```
+
+pyquery 可以直接解析DOM节点的结构，并通过DOM节点的一些属性快速进行内容提取

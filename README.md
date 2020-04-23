@@ -30,3 +30,5 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 - post请求: [tutorial_requests_post.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_post.py)
 
 - response信息: [tutorial_requests_response.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_response.py)
+
+- 判断状态是否为200: [tutorial_requests_codes.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_codes.py)

@@ -46,3 +46,5 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 - seesion维持: [tutorial_requests_session.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_session.py)
 
 - 忽略不受信任的ssl: [tutorial_requests_ssl.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_ssl.py)
+
+- 设置超时: [tutorial_requests_timeout.py](https://github.com/Rockycai/python3_spider_practise/blob/master/tutorial_requests_timeout.py)

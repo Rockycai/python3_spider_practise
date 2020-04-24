@@ -93,4 +93,4 @@ pyquery 可以直接解析DOM节点的结构，并通过DOM节点的一些属性
 
 - 获取属性 attr: [tutorial_pyquery_attr.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_attr.py)
 
-- 遍历获取 attr: [tutorial_pyquery_items_attr.py](https://github/Rockycai/python3_spider_practise/blob/master/pyquerytutorial_pyquery_items_attr.py)
+- 遍历获取 attr: [tutorial_pyquery_items_attr.py](https://github/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_items_attr.py)

@@ -80,3 +80,5 @@ pyquery 可以直接解析DOM节点的结构，并通过DOM节点的一些属性
 - css选择器用法: [tutorial_pyquery_css.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_css.py)
 
 - 选择节点find用法: [tutorial_pyquery_find.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_find.py)
+
+- 选择节点children用法: [tutorial_pyquery_children.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_children.py)

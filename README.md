@@ -90,3 +90,5 @@ pyquery 可以直接解析DOM节点的结构，并通过DOM节点的一些属性
 - 返回兄弟节点: [tutorial_pyquery_siblings.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_siblings.py)
 
 - 返回指定兄弟节点: [tutorial_pyquery_css_siblings.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_css_siblings.py)
+
+- 获取属性 attr: [tutorial_pyquery_attr.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_attr.py)

@@ -14,8 +14,6 @@ html = '''
 
 from pyquery import PyQuery as pq
 doc = pq(html)
-a = doc('.item-0.active a')
-print(a)
-print(a.attr('href'))
-# 和上面返回一样结果
-# print(a.attr.href)
+a = doc('a')
+for item in a.items():
+    print(item.attr('href'))

@@ -53,7 +53,7 @@ pip install requests -i https://mirrors.aliyun.com/pypi/simple/
 
 - 代理: [tutorial_requests_auth.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests/tutorial_requests_auth.py)
 
-## pyquery
+## pyquery基本使用
 
 安装**pyquery**
 
@@ -68,3 +68,11 @@ pip install pyquery -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
 pyquery 可以直接解析DOM节点的结构，并通过DOM节点的一些属性快速进行内容提取
+
+### pyquery用法
+
+- 字符串初始化: [tutorial_pyquery_string.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_string.py)
+
+- url初始化: [tutorial_pyquery_url.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_url.py)
+
+- 文件初始化: [tutorial_pyquery_file.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_file.py)

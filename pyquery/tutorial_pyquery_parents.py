@@ -15,5 +15,8 @@ html = '''
 from pyquery import PyQuery as pq
 doc = pq(html)
 items = doc('.list')
+# 选择单节点
+#parents = items.parents('.wrap')
 parents = items.parents()
+
 print(parents)

@@ -100,3 +100,5 @@ pyquery 可以直接解析DOM节点的结构，并通过DOM节点的一些属性
 - 获取节点中的html: [tutorial_pyquery_html.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_html.py)
 
 - 节点操作: [tutorial_pyquery_add_remove.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_add_remove.py)
+
+- 移除节点: [tutorial_pyquery_remove.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_remove.py)

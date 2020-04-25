@@ -102,3 +102,21 @@ pyquery 可以直接解析DOM节点的结构，并通过DOM节点的一些属性
 - 节点操作: [tutorial_pyquery_add_remove.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_add_remove.py)
 
 - 移除节点: [tutorial_pyquery_remove.py](https://github.com/Rockycai/python3_spider_practise/blob/master/pyquery/tutorial_pyquery_remove.py)
+
+## mongodb基本使用
+
+安装**pymongo**
+
+```bash
+pip install pymongo 
+```
+
+如果速度比较慢可以使用-i参数
+
+```bash
+pip install pymongo -i https://mirrors.aliyun.com/pypi/simple/
+```
+
+### mongodb用法
+
+- mongodb insert用法: [tutorial_mongodb_insert.py](https://github.com/Rockycai/python3_spider_practise/blob/master/mongodb/tutorial_mongodb_insert.py)

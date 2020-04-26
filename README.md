@@ -158,7 +158,7 @@ def scrape_page(url):
 ```python
 def scrape_index(page):
     index_url = f'{BASE_URL}/page/{page}'
-    return scrape_page(index_url
+    return scrape_page(index_url)
 ```
 
 3. 拿到详情页的链接拼成url
@@ -172,7 +172,7 @@ def parse_index(html):
         logging.info('get detail url %s', detail_url)
         yield detail_url
 ```
-[url](https://github.com/Rockycai/python3_spider_practise/raw/master/images/1.png)
+![url](https://github.com/Rockycai/python3_spider_practise/raw/master/images/1.png)
 
 4. 通过选择器获取想要的内容
 ```python

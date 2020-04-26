@@ -205,3 +205,23 @@ def parse_detail(html):
 - 上映时间：是 span 节点，其内容包含了上映时间，其外侧是包含了 class 为 info 的 div 节点。但注意这个 div 前面还有一个 class 为 info 的 div 节点，我们可以使用其内容来区分，也可以使用 nth-child 或 nth-of-type 这样的选择器来区分。另外提取结果中还多了「上映」二字，我们可以用正则表达式把日期提取出来。
 - 评分：是一个 p 节点，其内容便是评分，p 节点的 class 属性为 score。
 - 剧情简介：是一个 p 节点，其内容便是剧情简介，其外侧是 class 为 drama 的 div 节点。
+
+5. 写入mongodb, $set如果没有则新建,否则就修改
+```python
+def save_data(data):
+    collection.update_one({
+        'name': data.get('name')
+    }, {
+        '$set': data
+    },  upsert=True)
+```
+
+6. 启用多进程, 加快爬吃速度
+```python
+if __name__ == '__main__':
+    pool = multiprocessing.Pool() 
+    pages = range(1, TOTAL_PAGE + 1)
+    pool.map(main, pages)
+    pool.close()
+    pool.join()
+```

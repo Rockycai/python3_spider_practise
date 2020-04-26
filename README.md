@@ -128,3 +128,35 @@ pip install pymongo -i https://mirrors.aliyun.com/pypi/simple/
 - mongodb find_one: [tutorial_mongodb_find_one.py](https://github.com/Rockycai/python3_spider_practise/blob/master/mongodb/tutorial_mongodb_find_one.py)
 
 - mongodb operator: [tutorial_mongodb_operator.py](https://github.com/Rockycai/python3_spider_practise/blob/master/mongodb/tutorial_mongodb_operator.py)
+
+## requests pyquery mongodb 爬虫案例
+
+直接爬 https://static1.scrape.cuiqingcai.com 这个网址内容
+
+- 用 requests 爬取这个站点每一页的电影列表，顺着列表再爬取每个电影的详情页。
+- 用 pyquery 和正则表达式提取每部电影的名称、封面、类别、上映时间、评分、剧情简介等内容
+- 把以上爬取的内容存入 MongoDB 数据库。
+- 使用多进程实现爬取的加速。
+
+1. 拿到页面内容
+```python
+def scrape_page(url):
+    logging.info('scraping %s...', url)
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    }
+    try:
+        response = requests.get(url, headers=headers)
+        if response.status_code == 200:
+            return response.text
+        logging.error('get invalid status code %s while scraping %s', response.status_code, url)
+    except requests.RequestException:
+        logging.error('error occurred while scraping %s', url, exc_info=True)
+```
+
+2. 通过拼接url给scrape_page函数，返回每一页的内容
+```python
+def scrape_index(page):
+    index_url = f'{BASE_URL}/page/{page}'
+    return scrape_page(index_url
+```

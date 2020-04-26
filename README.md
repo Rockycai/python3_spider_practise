@@ -124,3 +124,5 @@ pip install pymongo -i https://mirrors.aliyun.com/pypi/simple/
 - mongodb insert_one: [tutorial_mongodb_insert_one.py](https://github.com/Rockycai/python3_spider_practise/blob/master/mongodb/tutorial_mongodb_insert_one.py)
 
 - mongodb insert_many: [tutorial_mongodb_insert_many.py](https://github.com/Rockycai/python3_spider_practise/blob/master/mongodb/tutorial_mongodb_insert_many.py)
+
+- mongodb find_one: [tutorial_mongodb_find_one.py](https://github.com/Rockycai/python3_spider_practise/blob/master/mongodb/tutorial_mongodb_find_one.py)

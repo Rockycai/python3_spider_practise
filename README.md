@@ -160,3 +160,17 @@ def scrape_index(page):
     index_url = f'{BASE_URL}/page/{page}'
     return scrape_page(index_url
 ```
+
+3. 拿到详情页的链接拼成url
+```python
+def parse_index(html):
+    doc = pq(html)
+    links = doc('.el-card .name')
+    for link in links.items():
+        href = link.attr.href
+        detail_url = urljoin(BASE_URL, href)
+        logging.info('get detail url %s', detail_url)
+        yield detail_url
+```
+[url](https://github.com/Rockycai/python3_spider_practise/blob/master/images/1.png)
+

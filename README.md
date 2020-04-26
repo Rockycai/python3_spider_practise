@@ -172,5 +172,5 @@ def parse_index(html):
         logging.info('get detail url %s', detail_url)
         yield detail_url
 ```
-[url](https://github.com/Rockycai/python3_spider_practise/blob/master/images/1.png)
+![url](https://github.com/Rockycai/python3_spider_practise/raw/master/images/1.png)
 

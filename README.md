@@ -129,7 +129,7 @@ pip install pymongo -i https://mirrors.aliyun.com/pypi/simple/
 
 - mongodb operator: [tutorial_mongodb_operator.py](https://github.com/Rockycai/python3_spider_practise/blob/master/mongodb/tutorial_mongodb_operator.py)
 
-## requests pyquery mongodb 爬虫案例
+## 案例1 requests pyquery mongodb 爬虫案例 
 
 直接爬 https://static1.scrape.cuiqingcai.com 这个网址内容
 
@@ -216,7 +216,7 @@ def save_data(data):
     },  upsert=True)
 ```
 
-6. 启用多进程, 加快爬吃速度
+6. 启用多进程, 加快爬虫速度
 ```python
 if __name__ == '__main__':
     pool = multiprocessing.Pool() 
@@ -225,3 +225,108 @@ if __name__ == '__main__':
     pool.close()
     pool.join()
 ```
+
+[requests_pyquery_mongodb_spider.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests_pyquery_mongodb_spider.py)
+
+## 案例2 爬豆瓣250名的电影名称，分类等信息
+
+- 由于豆瓣官网的验证需要加入headers
+- 豆瓣也会对频繁的ip进行限制，所以要搭建代理池工具
+
+使用代理工具：[proxy_pool](https://github.com/jhao104/proxy_pool)
+
+```python
+# 获取一个代理ip和端口，这是利用proxy_pool的api
+def get_proxy():
+    return requests.get("http://127.0.0.1:5010/get/").json()
+
+def delete_proxy(proxy):
+    requests.get("http://127.0.0.1:5010/delete/?proxy={}".format(proxy))
+```
+
+通过代理，返回页面的内容
+```python
+def scrape_page(url, page, data={}):
+    retry_count = 3
+    logging.info('scraping %s...', url)
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+    }
+
+    while retry_count > 0:
+        proxy = get_proxy().get("proxy")
+        try:
+            if data:
+                response = requests.get(url, headers=headers, params=data, proxies={"http": "http://{}".format(proxy)})
+            else:
+                response = requests.get(url, headers=headers, proxies={"http": "http://{}".format(proxy)})
+            if response.status_code == 200:
+                return response.text
+            logging.error('get invalid status code %s while scraping %s', response.status_code, url)
+        except requests.RequestException:
+            retry_count -= 1
+            logging.error('error occurred while scraping %s', url, exc_info=True)
+    delete_proxy(proxy)
+```
+
+获取详情页url
+```python
+def parse_index(html):
+    doc = pq(html)
+    links = doc('.grid_view .item .pic a')
+    for link in links.items():
+        href = link.attr.href
+        logging.info('get detail url %s', href)
+        yield href
+```
+
+爬详情页所需要的内容
+```python
+def scrap_detail(html):
+    doc = pq(html)
+    title = doc('h1 span').text()
+    img = doc('#mainpic img').attr.src
+    categories = [ item.text() for item in doc('#info span[property="v:genre"]').items()]
+    contents = doc('#link-report span[property="v:summary"]').text()
+    release_dates = [ item.text() for item in doc('#info span[property="v:initialReleaseDate"]').items()]
+    score = doc('.rating_self strong[property="v:average"]').text()
+
+    return {
+        'title': title,
+        'img': img,
+        'categories': categories,
+        'contents': contents,
+        'release_dates': release_dates,
+        'score': score
+    }
+```
+
+写入mongodb
+```python
+def main(pages):
+    for page in range(pages):
+        data = {
+            'start': page * 25,
+            'filter': None
+        }
+        html = scrape_page(BASE_URL, page, data)
+        for index in parse_index(html):
+            detail_html = scrape_page(index, page)
+            data = scrap_detail(detail_html)
+            logging.info('get detail data %s', data)
+            logging.info('saving data to mongodb')
+            save_data(data)
+            logging.info('data saved successfully')
+```
+
+多进程爬虫加快效率
+```python
+if __name__ == '__main__':
+    pool = multiprocessing.Pool()
+    pages = range(0, TOTAL_PAGE + 1)
+    pool.map(main, pages)
+    pool.close()
+    pool.join()
+```
+
+[requests_pyquery_mongodb_douban.py](https://github.com/Rockycai/python3_spider_practise/blob/master/requests_pyquery_mongodb_douban.py)
